@@ -1,0 +1,26 @@
+=== PJW Blogminder  ===
+Tags: reminder
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal%40ftwr%2eco%2euk&item_name=Peter%20Westwood%20WordPress%20Plugins&no_shipping=1&cn=Donation%20Notes&tax=0&currency_code=GBP&bn=PP%2dDonationsBF&charset=UTF%2d8
+Contributors: westi
+Requires at least: 2.7
+Tested up to: 2.7.1
+Stable tag: 0.90
+
+== Description ==
+This plugin allows your users to configure a reminder to be sent to them if they haven't posted in the last n days.
+
+== Installation ==
+
+1. Upload to your plugins folder, usually `wp-content/plugins/`
+2. Activate the plugin on the plugin screen.
+3. Configure your reminder setting on your profile page.
+
+== Frequently Asked Questions ==
+
+= How often does the plugin check =
+
+The plugin checks all users on a twice daily basis using the WordPress cron system.
+
+= How often does the plugin send reminders =
+
+At the moment the plugin will send a reminder every 12 hours once you have gone over your configured reminder level.
