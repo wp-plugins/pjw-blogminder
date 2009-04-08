@@ -4,7 +4,7 @@
 	Plugin URI: http://blog.ftwr.co.uk/wordpress/pjw-blogminder/
 	Description: Allows users to configure a reminder for if they haven't blogged in a while.
 	Author: Peter Westwood
-	Version: 0.90
+	Version: 0.91-alpha
 	Author URI: http://blog.ftwr.co.uk/
  */
 
@@ -41,7 +41,9 @@ class pjw_blogminder
 	}
 
 	/**
-	 * Display the current value of the user option and provide the 
+	 * Display the current value of the user option.
+	 * 
+	 * Filters the maximum Threshold through the 'pjw_blogminder_maximum_threshold' filter for another plugin to modify.
 	 * 
 	 * @return none
 	 */
@@ -57,7 +59,7 @@ class pjw_blogminder
 				<?php _e('Remind if I have not posted to this blog in the last', 'pjw_blogminder'); ?>
 				<select name="pjw_blogminder_threshold" id="pjw_blogminder_threshold">
 				<option value="0" <?php selected(0,$user_reminder_interval)?>><?php _e('&mdash; No reminder &mdash;', 'pjw_blogminder');?></option>
-				<?php for ($num_days = 1; $num_days <= 7; $num_days++) {?>
+				<?php for ($num_days = 1; $num_days <= apply_filters('pjw_blogminder_maximum_threshold', 7) ; $num_days++) {?>
 				<option value="<?php echo $num_days; ?>"<?php selected($num_days, $user_reminder_interval)?>>
 					<?php printf( _n( '%d day', '%d days', $num_days, 'pjw_blogminder'), $num_days );?>
 				</option>
