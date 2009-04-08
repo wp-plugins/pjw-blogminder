@@ -9,6 +9,10 @@ Stable tag: 0.90
 == Description ==
 This plugin allows your users to configure a reminder to be sent to them if they haven't posted in the last n days.
 
+You configure the reminder on your Profile page (or the profile of another user if you have than capability)
+
+It is in the Personal Options section and called Blogminder Threshold 
+
 == Installation ==
 
 1. Upload to your plugins folder, usually `wp-content/plugins/`
