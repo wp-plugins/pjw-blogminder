@@ -13,6 +13,11 @@ You configure the reminder on your Profile page (or the profile of another user 
 
 It is in the Personal Options section and called Blogminder Threshold 
 
+Changelog:
+
+v0.90 - Initial Release
+v0.91-alpha - Added filter 'pjw_blogminder_maximum_threshold' to allow site customisation plugin to filter maximum threshold value.
+
 == Installation ==
 
 1. Upload to your plugins folder, usually `wp-content/plugins/`
@@ -28,3 +33,12 @@ The plugin checks all users on a twice daily basis using the WordPress cron syst
 = How often does the plugin send reminders =
 
 At the moment the plugin will send a reminder every 12 hours once you have gone over your configured reminder level.
+
+= How can I customise the plugin for my site = 
+
+To customise the plugin for your site then you can filter some of the settings by creating another plugin.
+If you want to change the maximum threshold value to allow shorter or longer reminder periods then use the 'pjw_blogminder_maximum_threshold' filter.
+
+== Screenshots ==
+
+1. This shows the user option as it appears on the profile page.
