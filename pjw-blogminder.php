@@ -114,7 +114,7 @@ class pjw_blogminder
 					$post_gmttime = mysql2date('G', $post[0]->post_date_gmt);
 					if ( ( $now - $post_gmttime ) > (86400 * $user_reminder_interval) )	
 					{
-						$message  = sprintf(__("Hi,\r\n\r\nThis is your friendly blogminder service.\r\n\r\nI just wanted to let you know that you haven't posted in %d day(s) and you asked me to remind you.\r\n\r\nYou might want to head over to your blog and write something now!\r\n\r\nOver and Out,\r\n\r\nBlogminder"), $user_reminder_interval) . "\r\n";
+						$message  = sprintf(__("Hi,\r\n\r\nThis is your friendly blogminder service.\r\n\r\nI just wanted to let you know that you haven't posted in at least %d day(s) and you asked me to remind you.\r\n\r\nYou might want to head over to your blog and write something now!\r\n\r\nOver and Out,\r\n\r\nBlogminder"), $user_reminder_interval) . "\r\n";
 					
 						wp_mail($blog_user->user_email, sprintf(__('[%s] Blogminder'), get_option('blogname')), $message);
 					}					
