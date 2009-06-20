@@ -13,10 +13,13 @@ You configure the reminder on your Profile page (or the profile of another user 
 
 It is in the Personal Options section and called Blogminder Threshold 
 
-Changelog:
+== Changelog ==
 
-v0.90 - Initial Release
-v0.91 - Added filter 'pjw_blogminder_maximum_threshold' to allow site customisation plugin to filter maximum threshold value.
+= 0.90 =
+* Initial Release
+
+= 0.91 = 
+* Added filter 'pjw_blogminder_maximum_threshold' to allow site customisation plugin to filter maximum threshold value.
 
 == Installation ==
 
