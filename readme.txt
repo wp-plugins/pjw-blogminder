@@ -3,7 +3,7 @@ Tags: reminder
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal%40ftwr%2eco%2euk&item_name=Peter%20Westwood%20WordPress%20Plugins&no_shipping=1&cn=Donation%20Notes&tax=0&currency_code=GBP&bn=PP%2dDonationsBF&charset=UTF%2d8
 Contributors: westi
 Requires at least: 2.7
-Tested up to: 2.9
+Tested up to: 3.0.1
 Stable tag: 0.92
 
 == Description ==
