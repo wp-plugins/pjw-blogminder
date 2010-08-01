@@ -4,7 +4,7 @@
 	Plugin URI: http://blog.ftwr.co.uk/wordpress/pjw-blogminder/
 	Description: Allows users to configure a reminder for if they haven't blogged in a while.
 	Author: Peter Westwood
-	Version: 0.91
+	Version: 0.92
 	Author URI: http://blog.ftwr.co.uk/
  */
 
@@ -106,7 +106,7 @@ class pjw_blogminder
 			{
 				$post = get_posts( array(	'numberposts' => 1,
 											'author' => $blog_user->user_id,
-											'post_status' => 'published',
+											'post_status' => 'publish',
 											'post_type' => 'post'
 										) );
 				if (isset($post[0]))

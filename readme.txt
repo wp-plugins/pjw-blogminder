@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal%4
 Contributors: westi
 Requires at least: 2.7
 Tested up to: 2.9
-Stable tag: 0.91
+Stable tag: 0.92
 
 == Description ==
 This plugin allows your users to configure a reminder to be sent to them if they haven't posted in the last n days.
@@ -15,11 +15,14 @@ It is in the Personal Options section and called Blogminder Threshold
 
 == Changelog ==
 
-= 0.90 =
-* Initial Release
+= 0.92 =
+* Fixed a glaring bug which meant it sent an email every day with WordPress 3.0 or newer.
 
 = 0.91 = 
 * Added filter 'pjw_blogminder_maximum_threshold' to allow site customisation plugin to filter maximum threshold value.
+
+= 0.90 =
+* Initial Release
 
 == Installation ==
 
